@@ -1,10 +1,10 @@
 ---
 # Ant major version number
-ant_version_major: '3'
+ant_version_major: '1'
 # Ant minor version number
-ant_version_minor: '2'
+ant_version_minor: '9'
 # Ant patch version number
-ant_version_patch: '1'
+ant_version_patch: '4'
 
 # Mirror where to dowload Ant redistributable package from
 ant_mirror: "http://mirror.ox.ac.uk/sites/rsync.apache.org/ant/binaries/"
