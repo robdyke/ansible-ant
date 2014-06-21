@@ -10,7 +10,7 @@ ant_version_patch: '4'
 ant_mirror: "http://mirror.ox.ac.uk/sites/rsync.apache.org/ant/binaries/"
 
 # SHA256 sum for the Ant redistributable package
-ant_redis_sha512sum: 'ee13c915a18f3c6e1283c43ce3716e2ed1b03fd87abe27d0e4964a84cba54474f95655c8d75ee12de2516f4df62402acfc9df064aa05f2cc80560a144b2128f8'
+# ant_redis_sha512sum: 'ee13c915a18f3c6e1283c43ce3716e2ed1b03fd87abe27d0e4964a84cba54474f95655c8d75ee12de2516f4df62402acfc9df064aa05f2cc80560a144b2128f8'
 
 # ant binary gets symlinked into {{ ant_bin_path }}
 ant_bin_path: '/usr/local/bin'

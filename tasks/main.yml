@@ -27,7 +27,7 @@
     owner=0
     group=0
     mode=0644
-    sha512sum={{ ant_redis_sha512sum }}
+#    sha512sum={{ ant_redis_sha512sum }}
 
 
 - name: Install Ant installation directory
