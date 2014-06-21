@@ -10,9 +10,9 @@ dependencies: []
 #   Meta information required when uploading a role to the
 #   galaxy.
 galaxy_info:
-  author: Mark Kusch
-  description: Manage Maven installation
-  company: http://silpion.de
+  author: Rob Dyke
+  description: Manage ANT installation
+  company: http://opengpsoc.org
   license: Apache 2
   min_ansible_version: 1.5
  

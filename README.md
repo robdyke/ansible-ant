@@ -1,36 +1,36 @@
-# ansible-maven
+# ansible-ant
 
-Install Maven in latest version from upstream.
+Install Ant in latest version from upstream.
 
 
 # Role variables
 
-## maven_version_major
-
-Default: 3
-
-## maven_version_minor
-
-Default: 2
-
-## maven_version_patch
+## ant_version_major
 
 Default: 1
 
-## maven_mirror
+## ant_version_minor
 
-Configure the mirror to download Maven.
-Default: http://ftp.fau.de/apache/maven
+Default: 9
 
-## maven_redis_shad256sum
+## ant_version_patch
 
-SHA256 sum for the downloaded Maven redistributable package.
-Default: cdee2fd50b2b4e34e2d67d01ab2018b051542ee759c07354dd7aed6f4f71675c
+Default: 4
+
+## ant_mirror
+
+Configure the mirror to download Ant.
+Default: http://mirror.ox.ac.uk/sites/rsync.apache.org/ant/binaries/
+
+## ant_redis_shad256sum
+
+SHA512 sum for the downloaded Ant redistributable package.
+Default: ee13c915a18f3c6e1283c43ce3716e2ed1b03fd87abe27d0e4964a84cba54474f95655c8d75ee12de2516f4df62402acfc9df064aa05f2cc80560a144b2128f8
 
 
-## maven_bin_path
+## ant_bin_path
 
-Directory where to symlink the mvn binary to.
+Directory where to symlink the ant binary to.
 Default: /usr/local/bin
 
 
@@ -46,7 +46,8 @@ Apache Version 2.0
 
 # Author
 
-Mark Kusch @mark.kusch silpion.de
+Rob Dyke @robdyke.com opengpsoc.org
+Based on ansible-maven by Mark Kusch @mark.kusch silpion.de
 
 
 <!-- vim: set ts=4 sw=4 et nofen: -->
