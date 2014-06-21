@@ -23,7 +23,7 @@
   tags: ant
   local_action: get_url
     dest={{ ansible_data_path }}/{{ ant_redis_filename }}
-    url={{ ant_mirror }}/ant-{{ ant_version_major }}/{{ ant_version }}/binaries/{{ ant_redis_filename }}
+    url={{ ant_mirror }}/{{ ant_redis_filename }}
     owner=0
     group=0
     mode=0644

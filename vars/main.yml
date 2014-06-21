@@ -1,6 +1,6 @@
 ---
 # Version of our role.
-ant_role_version: '0.1.0'
+ant_role_version: '0.1.2'
 
 # path for ansible to store downloaded or templated data
 ansible_data_path: '/usr/local/src/ansible/data'
