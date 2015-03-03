@@ -4,9 +4,7 @@
 #   Fail the play if it runs on an unsupported platform.
 - name: Assert platform is supported
   tags: ant
-  assert:
-    that:
-      - ansible_os_family in ['Archlinux', 'Debian', 'RedHat', 'Suse']
+  assert: { that: "ansible_os_family in ['Debian', 'Suse', 'RedHat']" }
 
 
 - name: Install Ant download directory (local)
@@ -64,3 +62,7 @@
     force=true
     src={{ ant_install_dir }}/apache-ant-{{ ant_version }}/bin/ant
     dest={{ ant_bin_path }}/ant
+
+# install antlibs
+- include: antlib.yml
+  when: antlib_jars is defined

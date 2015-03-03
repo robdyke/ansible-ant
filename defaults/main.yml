@@ -14,3 +14,8 @@ ant_mirror: "http://mirror.ox.ac.uk/sites/rsync.apache.org/ant/binaries/"
 
 # ant binary gets symlinked into {{ ant_bin_path }}
 ant_bin_path: '/usr/local/bin'
+
+#antlib_jars: 
+#  - name: 'maven-ant-tasks'
+#    version: '2.1.3'
+#    url: 'http://archive.apache.org/dist/maven/binaries/maven-ant-tasks-2.1.3.jar'
