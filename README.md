@@ -39,10 +39,10 @@ ability to also install antlibs:
 just add a dict like this and it will install the specified ant-jar into the lib-dir of the ant-installation
 
 ```
-#antlib_jars: 
-- name: 'maven-ant-tasks'
-  version: '2.1.3'
-  url: 'http://archive.apache.org/dist/maven/binaries/maven-ant-tasks-2.1.3.jar'
+antlib_jars: 
+  - name: 'maven-ant-tasks'
+    version: '2.1.3'
+    url: 'http://archive.apache.org/dist/maven/binaries/maven-ant-tasks-2.1.3.jar'
 ```
 
 # Dependencies
