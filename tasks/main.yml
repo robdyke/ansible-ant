@@ -11,21 +11,19 @@
 
 - name: Install Ant download directory (local)
   tags: ant
+  sudo: no
   local_action: file
     state=directory
-    owner=0
-    group=0
     mode=0755
     dest={{ ansible_data_path }}
 
 
 - name: Download Ant (local)
   tags: ant
+  sudo: no
   local_action: get_url
     dest={{ ansible_data_path }}/{{ ant_redis_filename }}
     url={{ ant_mirror }}/{{ ant_redis_filename }}
-    owner=0
-    group=0
     mode=0644
 #    sha512sum={{ ant_redis_sha512sum }}
 
