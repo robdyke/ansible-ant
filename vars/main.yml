@@ -6,7 +6,7 @@ ant_role_version: '0.1.2'
 ansible_data_path: '/usr/local/src/ansible/data'
 
 # base installation directory for any Ant distribution
-ant_install_dir: '/opt/ant'
+ant_install_dir: '/usr/local/ant'
 
 # concatenated Ant version
 ant_version: "{{ ant_version_major }}.{{ ant_version_minor }}.{{ ant_version_patch }}"

@@ -1,0 +1,10 @@
+  # wget::fetch { '${name}-antlib':
+  #   source      => $source_url,
+  #   destination => '/usr/share/apache-ant-${ant::params::version}/lib/${name}-${version}.jar',
+  #   require     => Class['ant'],
+  # }
+
+  - name: download antlibs
+    get_url: url='{{ item.url }}' dest='{{ ant_install_dir }}/apache-ant-{{ ant_version }}/lib/{{ item.name}}-{{ item.version }}.jar'
+    with_items:
+      - "{{ antlib_jars }}"
